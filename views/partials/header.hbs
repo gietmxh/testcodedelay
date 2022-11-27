@@ -12,11 +12,93 @@
     <meta property="og:image" content="{{ settings.thumbnail }}">
     <link rel="shortcut icon" href="{{settings.favicon}}" type="image/x-icon">
     <title>{{#if title}}{{ title }} - {{ settings.defaultTitle }}{{else}}{{ settings.defaultTitle }}{{/if}}</title>
-    <link rel="stylesheet" href="../assets/css/app.css">
-    <link rel="stylesheet" href="../assets/plugins/notify/css/jquery.growl.css">
-    <link rel="stylesheet" href="../assets/css/richtext.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-social.css">
+    <link rel="stylesheet" href="../assets/css/style.css?ver=28">
+    <link rel="stylesheet" href="../assets/css/custom.1.css?ver=28">
+    <link rel="stylesheet" href="../assets/css/wheel.css?ver=1651368768">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.4/dist/simple-notify.min.css" />
+
     <link rel="stylesheet" href="../assets/plugins/select2/select2.min.css">
+    <link rel="stylesheet" href="../assets/plugins/notify/css/jquery.growl.css">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <style>
+    .aa:hover,
+    .aa:focus {
+        background: #ad4105;
+        border-radius: 5px
+    }
+
+    .coffer-box {
+        display: block;
+        position: fixed;
+        bottom: 90px;
+        right: 15px;
+        width: 15%;
+        z-index: 1000;
+        cursor: pointer;
+        /*background: #ad410569;*/
+        border-radius: 10px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    @media (max-width: 767px) {
+        .coffer-box {
+            background: unset;
+            width: 50%;
+            bottom: 20px;
+        }
+    }
+
+    .mb-0 {
+        margin-bottom: 0;
+    }
+
+    .mt-100 {
+        margin-top: 100px;
+    }
+
+    .mainbar {
+        padding: 0px !important;
+    }
+
+    .panel-heading {
+            background-color: #0fc4db !important;
+            border-color: #0fc4db !important;
+        }
+
+        .panel-primary {
+            /*background-color: #0fc4db !important;*/
+            border-color: #0fc4db !important;
+        }
+
+        .navbar {
+            background-color: #0fc4db !important;
+
+        }
+
+        .navbar .navbar-collapse {
+            background-color: #0fc4db !important;
+        }
+
+        .table .bg-primary {
+            background-color: #0fc4db !important;
+        }
+
+        .footer {
+            background-color: #0fc4db !important;
+        }
+
+        .mainbar {
+            background-color: #fff !important;
+        }
+
+        </style>
+        
     {{{ settings.headerScript }}}
 </head>
 
