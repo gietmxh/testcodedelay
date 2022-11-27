@@ -1,67 +1,24 @@
 {{> header }}
-<style>
-    .admin-navbar .nav-link {
-        padding: 0.60rem 2.3rem !important;
-    }
-</style>
-<div id="global-loader"></div>
+
+<input type="hidden" name="main_session">
+ <div class="mainbar" style="height: 120px;">
+  <div class="navbar">
+   <div class="container">
+    <a href="/" class="text-left">
+     <div class="">
+      <a href="/" class="text-center"><img src="https://i.imgur.com/QPNqMIE.gif" height="80" alt="Logo"></a>
+     </div>
+    </a>
+   </div>
+  </div>
 <div class="page">
     <div class="page-main">
-        <div class="header">
-            <div class="container">
-                <div class="d-flex">
-                    <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse"
-                        data-target="#headerMenuCollapse">
-                        <span class="header-toggler-icon"></span>
-                    </a>
-                    <a class="header-brand" href="/" style="color:#fff;font-weight:bold">
-                        <i class="fab fa-opencart" style="font-size: 25px;"></i> {{ settings.nameSite }}</a>
-                </div>
-            </div>
-        </div>
-        <div class="admin-navbar sticky" id="headerMenuCollapse">
-            <div class="container">
-                <ul class="nav">
-                    <li class="nav-item with-sub">
-                        <a class="nav-link" href="../">
-                            <i class="fas fa-home"></i>
-                            <span>Trang Chủ</span>
-                        </a>
-                    </li>
-                    <li class="nav-item with-sub">
-                        <a class="nav-link scroll-to" href="#how_to_play"><i class="fa fa-gamepad"></i>
-                            <span>Cách Chơi</span>
-                        </a>
-                    </li>
-                    <li class="nav-item with-sub">
-                        <a class="nav-link scroll-to" href="#history_win"><i class="fa fa-history"></i>
-                            <span>Lịch Sử Thắng</span>
-                        </a>
-                    </li>
-                    <li class="nav-item with-sub">
-                        <a class="nav-link scroll-to" href="#check_transaction"><i class="fa fa-search"></i>
-                            <span>Kiểm Tra Giao Dịch</span>
-                        </a>
-                    </li>
-                    <li class="nav-item with-sub">
-                        <a class="nav-link scroll-to" href="#mission_day"><i class="fa fa-tasks"></i>
-                            <span>Nhiệm Vụ Ngày</span>
-                        </a>
-                    </li>
-                    <li class="nav-item with-sub">
-                        <a class="nav-link scroll-to" href="#top_tuan"><i class="fa fa-trophy"></i>
-                            <span>Đua TOP</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <main class="container">
             <div class="mainbar"></div>
             <div class="row">
                 <div class="col-md-12 mb-3">
                     <div class="content text-center">
-                        <h2><b>[</b>CLMM.CAM<b>]</b> Đỉnh cao Minigame Momo</h2>
+                        <h2><font color="fuchsia"><b>{{ settings.nameSite }}</b></font> Đỉnh cao Minigame Momo</h2>
                         <div class="row justify-content-center mb-3" id="list-game">
                             {{#each games}}
                             <div style="padding: 5px">
